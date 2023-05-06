@@ -1,0 +1,14 @@
+{
+	"id": "sample-íntance",
+	"label": "SAMPLE INSTANCE",
+	"description": "",
+	"instanz_ver": "^0.0.1",
+	"root_img": "sample-rootfs",
+	"root_ver": "^0.0.1",
+	"packages": [
+		{
+			"id": "sample-package",
+			"version": "^0.0.1"
+		}
+	]
+}

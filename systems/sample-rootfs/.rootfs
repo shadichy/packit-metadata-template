@@ -1,0 +1,8 @@
+{
+	"id": "sample-rootfs",
+	"label": "SAMPLE ROOTFS",
+	"version": "0.0.1",
+	"arch": "x86_64",
+	"instanz_ver": "^0.0.1",
+	"packit_ver": "^0.0.1"
+}
