@@ -1,3 +1,11 @@
-/.rootfs
-/.source
-/.files
+.rootfs
+.source
+.files
+packit-compatible
+packit-compatible/alpine.json
+packit-compatible/archlinux.json
+packit-compatible/debian.json
+packit-compatible/freebsd.json
+packit-compatible/nixos.json
+packit-compatible/redhat.json
+packit-compatible/voidlinux.json

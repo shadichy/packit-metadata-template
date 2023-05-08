@@ -1,2 +1,3 @@
-# packit-metadata-template
-Template for ExtOS packages including metadata file, used by packit
+# Metadata template
+
+Template for ExtOS including metadata file, used by packit and instanz
