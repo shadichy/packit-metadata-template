@@ -3,6 +3,5 @@
 	"description": "Sample package",
 	"version": "0.0.1",
 	"arch": "x86_64",
-	"packit_ver": "^0.0.1",
-	"dependencies": []
+	"packit_ver": "^0.0.1"
 }
