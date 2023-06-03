@@ -1,0 +1,25 @@
+#!/bin/sh
+
+pre_install() {
+  echo
+}
+
+post_install() {
+  echo
+}
+
+pre_upgrade() {
+  echo
+}
+
+post_upgrade() {
+  echo
+}
+
+pre_remove() {
+  echo
+}
+
+post_remove() {
+  echo
+}

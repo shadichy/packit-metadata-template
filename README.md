@@ -10,29 +10,28 @@ This is the filesystem structure of ExtOS
 /
 ├── instances/
 |   └── <instanz instances>/
-|       ├── .conf           # instance config
-|       ├── .instance       # instance metadata
-|       ├── .pkg_fstab      # package table
+|       ├── .conf                   # instance config
+|       ├── .instance               # instance metadata
+|       ├── .pkg_fstab              # package table
 |       ├── overlay/
 |       |   └── <file system>
 |       └── workdir/
 ├── packages/
 |   └── <packit packages>/
 |       ├── <file system>
-|       ├── .files          # list of all files in file system
-|       ├── .packit         # package metadata
-|       ├── .source         # package additional information
-|       ├── packit-scripts/
-|       |   └── <pre/post install scripts>
-|       └── packit-compatible/
+|       ├── .files                  # list of all files in file system
+|       ├── .packit                 # package metadata
+|       ├── .source                 # package additional information
+|       ├── .install                # additional install/uninstall scripts
+|       └── .packit-compatible/
 |           └── <compatibility layer>
 └── systems/
     └── <system images>/
         ├── <file system>
-        ├── .files          # list of all files in file system
-        ├── .rootfs         # system image metadata
-        ├── .source         # system image additional information
-        └── packit-compatible/
+        ├── .files                  # list of all files in file system
+        ├── .rootfs                 # system image metadata
+        ├── .source                 # system image additional information
+        └── .packit-compatible/
             └── <compatibility layer>
 ```
 
@@ -59,7 +58,7 @@ And this is an example of Arch Linux compatibility layer of this system image
 
 ```json
 {
- "defaultPackages": [               # Provided packages in equivalent of Arch Linux
+ "provides": [                      # Provided packages in equivalent of Arch Linux
   {
    "id": "base-sample",             # Package id
    "version": "0.0.1-1"             # Package version
@@ -88,9 +87,15 @@ And this is an example of Arch Linux compatibility layer of this package
 {
  "name": "sample-package",          # Package name in equivalent of Arch Linux
  "version": "0.0.1",                # Package version
- "dependencies": [                  # Package dependencies in equivalent of Arch Linux
+ "depend": [                        # Package dependencies in equivalent of Arch Linux
   {
    "id": "sample-dependency",       # Dependency package name
+   "version": "0.0.1"               # Dependency package version
+  }
+ ],
+ "opt_depend": [                     # Optional dependencies
+  {
+   "id": "sample-optdep",           # Dependency package name
    "version": "0.0.1"               # Dependency package version
   }
  ],
